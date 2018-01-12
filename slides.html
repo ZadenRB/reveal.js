@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+	<html class="sl-root decks embed mz-applicationcache mz-history mz-localstorage mz-svg mz-opacity mz-rgba mz-backgroundsize mz-cssanimations mz-csstransforms mz-csstransforms3d mz-csstransitions mz-flexbox mz-flexboxlegacy mz-fullscreen loaded ua-mac ua-chrome reveal-is-ready fonts-are-ready" data-embed-style="light">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Python Strings: Slides</title>
+		<meta name="description" content="Slides">
+		<link href="//assets.slid.es/assets/slides/slides-985765429f68a85880426345fe156653.css" media="all" rel="stylesheet" />
+		<link href="//assets.slid.es/assets/application-37b8f0e482ed79edf5acb971f85affd1.css" media="all" rel="stylesheet" />
+		<link href="//assets.slid.es/assets/deck-v2-373be343c31e7342ed6effb15e01eb48.css" media="all" rel="stylesheet" />
+    <link rel="stylesheet" href="https://s3.amazonaws.com/static.slid.es/fonts/opensans/opensans.css">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/static.slid.es/fonts/montserrat/montserrat.css">
+<style id="user-css-output" type="text/css">.reveal .slides>section, .reveal .slides>section>section {
+    display: block;
+  }
+</style>
+		<meta content="authenticity_token" name="csrf-param" />
+<meta content="eY/uWUKSoKYi/0NTRw4RKJUPUDxIrTcqjYwggzqho2E=" name="csrf-token" />
+		<script type="text/javascript">
+  if( !/dnt=1/.test( window.location.search ) ) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-39670045-1', { 'userId': '813384' });
+    ga('send', 'pageview');
+
+  }
+</script>
+		<!--[if lt IE 9]>
+    <script src="//assets.slid.es/assets/html5shiv-b51d49ab0e89834a02ffce4a59905afb.js"></script>
+<![endif]-->
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-white-blue" style="transition: -webkit-transform 0.8s ease;">
+		<div class="reveal slide has-horizontal-slides ready" role="application" data-transition-speed="default" data-background-transition="slide" style="height: 639px;">
+			<div class="slides" style="width: 960px; height: 700px; left: 50%; top: 50%; bottom: auto; right: auto; transform: translate(-50%, -50%) scale(0.633333);">
+				<section data-id="9c883fd65bad623d5dbd8ff804bacf9f"><div class="sl-block" data-block-type="text" data-block-id="f583c9f0df4abab23bcc20a56c5ec1b0" style="height: auto; min-width: 30px; min-height: 30px; width: 960px; left: 0px; top: 101px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" dir="ui">
+<p style="text-align:center"><span style="font-size:1.8em">Try editing the code to make the <strong>Output </strong>say:</span></p>
+</div></div>
+
+<div class="sl-block" data-block-type="text" data-block-id="fb541c2276cbd7825a17265bf0404e6c" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 178px; top: 573px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p><span style="font-size:1.2em"><strong>Need a hint?</strong></span></p>
+
+<p><span style="font-size:0.7em">Look at the words in quotes (aka strings):<span style="color:rgb(178, 34, 34)"><span style="font-size:1.0em"> <strong>"..."</strong></span></span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="shape" data-block-id="7e9b244d8ff9f787b4101143bf188e9b" style="min-width: 4px; min-height: 4px; width: 748px; height: 235px; left: 106px; top: 280px;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(46, 215, 194)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 748 235"><rect width="748" height="235" class="shape-element" fill="rgb(46, 215, 194)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="f13e86fdc6d0bbf3605d30eb16acb6d9" style="height: auto; min-width: 30px; min-height: 30px; width: 71px; left: 0px; top: 0px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p style="text-align:left"><strong><span style="font-size:4.0em">1</span></strong></p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="c8eac41846803fc328bad3f66157587b" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 348px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; font-size: 276%;">
+<pre style="text-align: center;"><span style="color:#FFFF00">Hello there!</span></pre>
+</div></div></section><section data-id="4021a78f5955ea608aa4495f4559870e" hidden aria-hidden="true" class="future"><div class="sl-block" data-block-type="text" style="height: auto; width: 835px; left: 80px; top: 100px;" data-block-id="db9137d262c0793f86784914024d3312"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<p style="text-align:center"><span style="font-size:1.8em">Great! Now make it say "Hello" to <em>you</em> (your name)</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 223px; left: 0px; top: 0px;" data-block-id="8ad23191241422e94f983cbd791b9015"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p style="text-align:left"><strong><span style="font-size:4.0em">2</span></strong></p>
+</div></div>
+
+
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 800px; height: 235px; left: 80px; top: 280px;" data-block-id="564b25841eb812202302f2a069c228ed"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(46, 215, 194)" data-shape-stretch="true" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 800 235"><rect width="800" height="235" class="shape-element" fill="rgb(46, 215, 194)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 676px; left: 143px; top: 348px;" data-block-id="aebf0752f374d7ff51e717e06706ebb7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 276%;">
+<pre style="text-align:center"><span style="color:#FFFF00">Hello Shelly!</span></pre>
+</div></div></section><section data-id="7c49b5369523f23bf4e9c10396fb7f71" hidden aria-hidden="true" class="future">
+
+
+<div class="sl-block" data-block-type="text" data-block-id="32afa2cfe15d0b6573f060a76f43a1a9" style="height: auto; min-width: 30px; min-height: 30px; width: 833px; left: 127px; top: 438px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: left; font-size: 168%;" dir="ui">
+<p><span style="color:#008080">The line you just edited <strong>"calls"</strong> the <strong>function</strong></span> <span style="color:#0000CD">printHello</span><span style="color:#008080">,</span> <span style="color:#008080">using an <strong>argument</strong></span> <span style="color:#008080">(</span><span style="color:#B22222">"your name"</span><span style="color:#008080">).</span></p>
+</div></div>
+<div class="sl-block" data-block-type="line" data-block-id="8d62e14ea222eca8609b81b228c7d836" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 276px; top: 286px;"><div class="sl-block-content" data-line-x1="379" data-line-y1="154" data-line-x2="438" data-line-y2="2" data-line-color="#000000" data-line-start-type="line-arrow" data-line-end-type="none" style="z-index: 13;" data-line-width="11px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="59" height="152" viewbox="379 2 59 152"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="382.5" y1="146.5" x2="438.5" y2="2.5"></line><line stroke="#000000" stroke-width="11" x1="382.5" y1="146.5" x2="438.5" y2="2.5"></line><path style="fill: rgba(0,0,0,0);" stroke="#000000" stroke-width="11" transform="translate(382,146) rotate(21.214)" d="M -24.75 -24.75 L 0 0 L 24.75 -24.75"></path></svg></div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 289px; left: 0px; top: 47px;" data-block-id="97edb7511b87b95e4ec426d3195a1432"><div class="sl-block-content" style="z-index: 10; font-size: 284%; border-style: solid; border-width: 6px;" data-highlight-theme="xcode"><pre><code>def printHello(person):
+   print("Hello " + person + "!")
+
+printHello("Shelly")</code></pre></div></div></section><section data-id="7b739e5b63821baa1bdf5a3e455b28fb" hidden aria-hidden="true" class="future">
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 833px; left: 64px; top: 72px;" data-block-id="b59b509405811023c14db06598e0ed01"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; text-align: left; font-size: 168%;">
+<p style="text-align:left"><span style="text-align:center"><span style="color:#008080">To <strong>"define"</strong> (create) a function, we use the keyword</span> </span><strong><span style="color:rgb(128, 0, 128); text-align:center">def</span></strong><span style="color:#008080"><span style="text-align:center">,</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 64px; top: 210px;" data-block-id="178cdc9b6b3eeccc5f695c2145ad4e63"><div class="sl-block-content" data-line-x1="314" data-line-y1="154" data-line-x2="356" data-line-y2="7" data-line-color="#000000" data-line-start-type="line-arrow" data-line-end-type="none" style="z-index: 13;" data-line-width="11px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="42" height="147" viewbox="314 7 42 147"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="316.5" y1="146.5" x2="356.5" y2="7.5"></line><line stroke="#000000" stroke-width="11" x1="316.5" y1="146.5" x2="356.5" y2="7.5"></line><path style="fill: rgba(0,0,0,0);" stroke="#000000" stroke-width="11" transform="translate(316,146) rotate(15.945)" d="M -24.75 -24.75 L 0 0 L 24.75 -24.75"></path></svg></div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 289px; left: 0px; top: 340px;" data-block-id="268f85893958f2e70fef43ca147913d5"><div class="sl-block-content" style="z-index: 11; font-size: 284%; border-style: solid; border-width: 6px;" data-highlight-theme="xcode"><pre><code>def printHello(person):
+   print("Hello " + person + "!")
+
+printHello("Shelly")</code></pre></div></div></section><section data-id="1a2f426a6acc6938c8b922d9a86dcac0" hidden aria-hidden="true" class="future">
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 935px; left: 13px; top: 75px;" data-block-id="a4f3cdaec7496c25889fdab7f155c800"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: left; font-size: 168%;">
+<p style="text-align:left"><span style="text-align:center"><span style="color:#008080">followed by the</span> <strong><span style="color:#0000FF">name</span></strong> <span style="color:#008080">of your function,</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 326px; top: 146px;" data-block-id="75a1e39ede2947f250099512724611ae"><div class="sl-block-content" data-line-x1="306" data-line-y1="152" data-line-x2="386" data-line-y2="-58" data-line-color="#000000" data-line-start-type="line-arrow" data-line-end-type="none" style="z-index: 13;" data-line-width="11px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="80" height="210" viewbox="306 -58 80 210"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="309.5" y1="144.5" x2="386.5" y2="-57.5"></line><line stroke="#000000" stroke-width="11" x1="309.5" y1="144.5" x2="386.5" y2="-57.5"></line><path style="fill: rgba(0,0,0,0);" stroke="#000000" stroke-width="11" transform="translate(309,144) rotate(20.854)" d="M -24.75 -24.75 L 0 0 L 24.75 -24.75"></path></svg></div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 289px; left: 0px; top: 340px;" data-block-id="0a45dc510aea19fafee8497e841ab382"><div class="sl-block-content" style="z-index: 10; font-size: 284%; border-style: solid; border-width: 6px;" data-highlight-theme="xcode"><pre><code>def printHello(person):
+   print("Hello " + person + "!")
+
+printHello("Shelly")</code></pre></div></div></section><section data-id="f0cee62879b1222dbf47ae1228f30e72" hidden aria-hidden="true" class="future">
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 926px; left: 17px; top: 75px;" data-block-id="a5f2a6b8e4e35957acc22802a05ff1d3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: left; font-size: 168%;">
+<p style="text-align:left"><span style="text-align:center"><span style="color:#008080">and any</span> <strong><span style="color:#4B0082">arguments</span></strong><span style="color:#008080"> it takes, in parentheses </span><span style="color:#4B0082"><strong>( )</strong></span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 400px; top: 148px;" data-block-id="baf3cc998826ee9a513d563c02d6c695"><div class="sl-block-content" data-line-x1="522" data-line-y1="146" data-line-x2="431" data-line-y2="-64" data-line-color="#000000" data-line-start-type="line-arrow" data-line-end-type="none" style="z-index: 13;" data-line-width="11px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="91" height="210" viewbox="431 -64 91 210"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="519.5" y1="138.5" x2="431.5" y2="-63.5"></line><line stroke="#000000" stroke-width="11" x1="519.5" y1="138.5" x2="431.5" y2="-63.5"></line><path style="fill: rgba(0,0,0,0);" stroke="#000000" stroke-width="11" transform="translate(519,138) rotate(-23.429)" d="M -24.75 -24.75 L 0 0 L 24.75 -24.75"></path></svg></div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 289px; left: 0px; top: 340px;" data-block-id="e17e3d932148e9a7ed337eb96c56e165"><div class="sl-block-content" style="z-index: 10; font-size: 284%; border-style: solid; border-width: 6px;" data-highlight-theme="xcode"><pre><code>def printHello(person):
+   print("Hello " + person + "!")
+
+printHello("Shelly")</code></pre></div></div></section><section data-id="e09485c4eb54ee32dff86f238060fbe4" hidden aria-hidden="true" class="future">
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 657px; left: 60px; top: 95px;" data-block-id="cf02b840d24def7fa490fc3c2ea06857"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: left; font-size: 168%;" dir="ui"><p style="text-align:right"><span style="color:#008080">this line always ends with a <strong>colon</strong></span></p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 644px; top: 225px;" data-block-id="7878a6c3acd21c6437418219fd179279"><div class="sl-block-content" data-line-x1="522" data-line-y1="146" data-line-x2="522" data-line-y2="10" data-line-color="#000000" data-line-start-type="line-arrow" data-line-end-type="none" style="z-index: 13;" data-line-width="11px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="136" viewbox="522 10 1 136"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="522.5" y1="138.5" x2="522.5" y2="10.5"></line><line stroke="#000000" stroke-width="11" x1="522.5" y1="138.5" x2="522.5" y2="10.5"></line><path style="fill: rgba(0,0,0,0);" stroke="#000000" stroke-width="11" transform="translate(522,138) rotate(0)" d="M -24.75 -24.75 L 0 0 L 24.75 -24.75"></path></svg></div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 289px; left: 0px; top: 340px;" data-block-id="45dced9d19a8911c7b7d6509c5460e5a"><div class="sl-block-content" style="z-index: 10; font-size: 284%; border-style: solid; border-width: 6px;" data-highlight-theme="xcode"><pre><code>def printHello(person):
+   print("Hello " + person + "!")
+
+printHello("Shelly")</code></pre></div></div></section><section data-id="ed644f1d696461fd3900a5e8bab3d6b7" hidden aria-hidden="true" class="future">
+
+
+
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 720px; top: 161px;" data-block-id="b0f0b32ce56ae3ebf719bd5596bd7658"><div class="sl-block-content" data-line-x1="522" data-line-y1="146" data-line-x2="522" data-line-y2="-34" data-line-color="#000000" data-line-start-type="line-arrow" data-line-end-type="none" style="z-index: 12;" data-line-width="11px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="180" viewbox="522 -34 1 180"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="522.5" y1="138.5" x2="522.5" y2="-33.5"></line><line stroke="#000000" stroke-width="11" x1="522.5" y1="138.5" x2="522.5" y2="-33.5"></line><path style="fill: rgba(0,0,0,0);" stroke="#000000" stroke-width="11" transform="translate(522,138) rotate(0)" d="M -24.75 -24.75 L 0 0 L 24.75 -24.75"></path></svg></div></div>
+<div class="sl-block" data-block-type="shape" data-block-id="ab7b62cf50975cf11b066fb1cbfee661" style="min-width: 4px; min-height: 4px; width: 865px; height: 80px; left: 80px; top: 339px;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgba(0, 0, 0, 0)" data-shape-stretch="true" style="z-index: 13;" data-shape-stroke-color="#ffff00" data-shape-stroke-width="9"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 865 80"><defs><clippath id="shape-mask-1-1515721125584"><rect width="865" height="80"></rect></clippath></defs><rect width="865" height="80" clip-path="url(#shape-mask-1-1515721125584)" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#ffff00" stroke-width="18"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 807px; left: 144px; top: 15px;" data-block-id="c7c0e759db5fcfee5a698889d495c484"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; text-align: left; font-size: 168%;">
+<p><span style="color:#008080">&amp; the <strong>indented</strong> line(s) <em><strong>after</strong></em> the colon is what the function actually does when it's <strong>"called"</strong></span></p>
+</div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 230px; top: 514px;" data-block-id="d0bf3ebecff84e81bf3278c6cf362c0f"><div class="sl-block-content" data-line-x1="666" data-line-y1="148" data-line-x2="647" data-line-y2="249" data-line-color="#000000" data-line-start-type="line-arrow" data-line-end-type="none" style="z-index: 15;" data-line-width="11px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="19" height="101" viewbox="647 148 19 101"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="664.5" y1="156.5" x2="647.5" y2="249.5"></line><line stroke="#000000" stroke-width="11" x1="664.5" y1="156.5" x2="647.5" y2="249.5"></line><path style="fill: rgba(0,0,0,0);" stroke="#000000" stroke-width="11" transform="translate(664,156) rotate(190.654)" d="M -24.75 -24.75 L 0 0 L 24.75 -24.75"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 960px; left: 0px; top: 615px;" data-block-id="e08bef786d444be0e043134a07d989f7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; text-align: left; font-size: 149%;" dir="ui"><p style="text-align:center"><span style="color:#008080"><em>Remember:</em> This is how you <strong>"call"</strong> the function</span></p></div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 289px; left: 0px; top: 278px;" data-block-id="30e1cf4d7f4922c4608922acc4909fed"><div class="sl-block-content" style="z-index: 10; font-size: 284%; border-style: solid; border-width: 6px;" data-highlight-theme="xcode"><pre><code>def printHello(person):
+   print("Hello " + person + "!")
+
+printHello("Shelly")</code></pre></div></div></section><section data-id="a976a1660ed206b190ea8466c929e745" hidden aria-hidden="true" class="future">
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 893px; left: 88px; top: 78px;" data-block-id="212daf22f3fec763e0e8b862bb45ed4f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<p style="text-align:left"><span style="color:#008080"><span style="font-size:54px">Let's change the name of the <strong>function</strong>, to whatever you want</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 223px; left: 0px; top: 0px;" data-block-id="0ba431e499e8f5cf868ccc08d032e432"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p style="text-align:left"><span style="color:#008080"><strong><span style="font-size:4.0em">3</span></strong></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="e440732ea6738ad1f8144706e0d8ed9a" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 630px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p><span style="color:#008080">Remember to change it in <strong><em>both</em></strong> places!</span></p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 289px; left: 0px; top: 280px;" data-block-id="6ef3c9c1d6ebb3af9c4b3ee0c9056f46"><div class="sl-block-content" style="z-index: 13; font-size: 283%; border-style: solid; border-width: 6px;" data-highlight-theme="xcode"><pre><code>def whateverYouWant(person):
+   print("Hello " + person + "!")
+
+whateverYouWant("Shelly")</code></pre></div></div>
+<div class="sl-block" data-block-type="line" data-block-id="2366fc099c7b2918ab0671b29fd9b21d" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 122px; top: 343px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="200" data-line-x2="418" data-line-y2="200" data-line-color="#ffff00" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="9px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="418" height="1" viewbox="0 200 418 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0.5" y1="200.5" x2="418.5" y2="200.5"></line><line stroke="#ffff00" stroke-width="9" x1="0.5" y1="200.5" x2="418.5" y2="200.5"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 10px; top: 511px;" data-block-id="370d77b3875d45c43feca782bf82f254"><div class="sl-block-content" data-line-x1="0" data-line-y1="200" data-line-x2="418" data-line-y2="200" data-line-color="#ffff00" data-line-start-type="none" data-line-end-type="none" style="z-index: 16;" data-line-width="9px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="418" height="1" viewbox="0 200 418 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0.5" y1="200.5" x2="418.5" y2="200.5"></line><line stroke="#ffff00" stroke-width="9" x1="0.5" y1="200.5" x2="418.5" y2="200.5"></line></svg></div></div></section><section data-id="9f0a8cc848fd33598a46c44694808b70" hidden aria-hidden="true" class="future">
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 769px; left: 88px; top: 78px;" data-block-id="c2ec6777aa6523d9c99b8d51841cce75"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" dir="ui">
+<p style="text-align:left"><span style="color:#008080"><span style="font-size:54px">Let's change the name of the <strong>argument</strong>, too</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 223px; left: 0px; top: 0px;" data-block-id="8b67428b165c71e3bde073d525597ad2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p style="text-align:left"><span style="color:#008080"><span style="font-size:120px"><strong>4</strong></span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 630px;" data-block-id="2a89ba42687c9692da6bc6b0728ff8b4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p><span style="color:#008080">Remember to change it in <strong><em>both</em></strong> places!</span></p>
+</div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 614px; top: 406px;" data-block-id="a4d2a91eeb01d7d64d5d2b33006e456f"><div class="sl-block-content" data-line-x1="514" data-line-y1="200" data-line-x2="482" data-line-y2="200" data-line-color="#ffff00" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="9px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="32" height="1" viewbox="482 200 32 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="514.5" y1="200.5" x2="482.5" y2="200.5"></line><line stroke="#ffff00" stroke-width="9" x1="514.5" y1="200.5" x2="482.5" y2="200.5"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 613px; top: 346px;" data-block-id="8132e1b6e31cfa3763bd746d44f47b5a"><div class="sl-block-content" data-line-x1="514" data-line-y1="200" data-line-x2="482" data-line-y2="200" data-line-color="#ffff00" data-line-start-type="none" data-line-end-type="none" style="z-index: 16;" data-line-width="9px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="32" height="1" viewbox="482 200 32 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="514.5" y1="200.5" x2="482.5" y2="200.5"></line><line stroke="#ffff00" stroke-width="9" x1="514.5" y1="200.5" x2="482.5" y2="200.5"></line></svg></div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 289px; left: 0px; top: 280px;" data-block-id="756696a93c2a4e42faff28ae746eb009"><div class="sl-block-content" style="z-index: 10; font-size: 305%; border-style: solid; border-width: 6px;" data-highlight-theme="xcode"><pre><code>def whateverYouWant(x):
+   print("Hello " + x + "!")
+
+whateverYouWant("Shelly")</code></pre></div></div></section><section data-id="25a2e8caee8259bb8e5d912107a0488e" hidden aria-hidden="true" class="future">
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 872px; left: 88px; top: 78px;" data-block-id="387103dacf631ce6486530d4e4f32f07"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<p style="text-align:left"><span style="color:#008080"><span style="font-size:54px">Now let's change the <strong>string</strong> that gets printed</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 223px; left: 0px; top: 0px;" data-block-id="3d3e76882eff6de24a9df5594dd83f90"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p style="text-align:left"><span style="color:#008080"><span style="font-size:120px"><strong>5</strong></span></span></p>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 289px; left: 0px; top: 280px;" data-block-id="e43610ee4be514bacadb91f04f37137c"><div class="sl-block-content" style="z-index: 13; font-size: 261%; border-style: solid; border-width: 6px;" data-highlight-theme="xcode"><pre><code>def whateverYouWant(x):
+   print("Whatever " + x + " wants")
+
+whateverYouWant("Shelly")</code></pre></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 256px; top: 393px;" data-block-id="121cc68a877036cce44d7997472c3225"><div class="sl-block-content" data-line-x1="1121" data-line-y1="200" data-line-x2="473" data-line-y2="200" data-line-color="#ffff00" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="9px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="648" height="1" viewbox="473 200 648 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="1121.5" y1="200.5" x2="473.5" y2="200.5"></line><line stroke="#ffff00" stroke-width="9" x1="1121.5" y1="200.5" x2="473.5" y2="200.5"></line></svg></div></div></section><section data-id="219b93ec7debcc847b3287b1008214f7" hidden aria-hidden="true" class="future">
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 839px; left: 88px; top: 78px;" data-block-id="e7e75c65fc3a27b7f562768502704de2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<p style="text-align:left"><span style="color:#008080"><span style="font-size:54px">Finally, let's call the function with a different argument:</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 223px; left: 0px; top: 0px;" data-block-id="7e72fe5c2c4bf4a015e99ccebb9a7665"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p style="text-align:left"><span style="color:#008080"><span style="font-size:120px"><strong>6</strong></span></span></p>
+</div></div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 427px; top: 490px;" data-block-id="99be00a346269b05426f2757722c635a"><div class="sl-block-content" data-line-x1="636" data-line-y1="200" data-line-x2="482" data-line-y2="200" data-line-color="#ffff00" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="9px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="154" height="1" viewbox="482 200 154 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="636.5" y1="200.5" x2="482.5" y2="200.5"></line><line stroke="#ffff00" stroke-width="9" x1="636.5" y1="200.5" x2="482.5" y2="200.5"></line></svg></div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 289px; left: 0px; top: 280px;" data-block-id="774440622404511c942441cbcf79429c"><div class="sl-block-content" style="z-index: 12; font-size: 256%; border-style: solid; border-width: 6px;" data-highlight-theme="xcode"><pre><code>def whateverYouWant(x):
+   print("Whatever " + x + " wants!")
+
+whateverYouWant("Moses")</code></pre></div></div></section><section data-id="9293e376bf4cc3d48c0c1d41ebaba039" hidden aria-hidden="true" class="future">
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 960px; height: 211px; left: 0px; top: 179px;" data-block-id="993170f77aa8aa39be206c8b584c8cd5"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(46, 215, 194)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 960 211"><rect width="960" height="211" class="shape-element" fill="rgb(46, 215, 194)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 891px; left: 35px; top: 239px;" data-block-id="960f3eeabc19f3780aa6a0875d581506"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 231%;">
+<pre style="text-align: center;"><span style="color:#FFFF00">Whatever Moses wants!</span></pre>
+</div></div></section><section data-id="a99deb9b1111ec5f37c80c2dc52125a5" hidden aria-hidden="true" class="future"><div class="sl-block" data-block-type="text" data-block-id="5f4ad43116921d08646c39ecb1311485" style="height: auto; min-width: 30px; min-height: 30px; width: 960px; left: 0px; top: 70px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; font-size: 210%;">
+<p>What if you want to call the function with <strong>two</strong> arguments?</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 960px; height: 179px; left: 0px; top: 330px;" data-block-id="093583d6f0369ae1a66909bce2fb4e9f"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(46, 215, 194)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 960 179"><rect width="960" height="179" class="shape-element" fill="rgb(46, 215, 194)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 917px; left: 22px; top: 381px;" data-block-id="3fd86a1f083b001c074a362b116750e9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 195%;">
+<pre style="text-align: center;"><span style="color:#FFFF00">Whatever ___ and ___ want.</span></pre>
+</div></div></section><section data-id="16f230ac4d3886aab6d53497fbff6143" hidden aria-hidden="true" class="future">
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 839px; left: 88px; top: 78px;" data-block-id="c5c6af5fdc4c79e74fdaedacdb945b5c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<p style="text-align:left"><span style="color:#008080"><span style="font-size:54px">Let's modify the function to take <strong>two</strong> arguments:</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 223px; left: 0px; top: 0px;" data-block-id="99cd2b505bc1a18db19d50c5cd332431"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p style="text-align:left"><span style="color:#008080"><span style="font-size:120px"><strong>7</strong></span></span></p>
+</div></div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 309px; top: 321px;" data-block-id="adbaf67efe01539299d766dafe8c69e0"><div class="sl-block-content" data-line-x1="713" data-line-y1="200" data-line-x2="476" data-line-y2="200" data-line-color="#ffff00" data-line-start-type="none" data-line-end-type="none" style="z-index: 13;" data-line-width="3px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="237" height="1" viewbox="476 200 237 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="713.5" y1="200.5" x2="476.5" y2="200.5"></line><line stroke="#ffff00" stroke-width="3" x1="713.5" y1="200.5" x2="476.5" y2="200.5"></line></svg></div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 156px; left: 0px; top: 280px;" data-block-id="1f5da7cbf9a04d6f489f87c0e64a49fd"><div class="sl-block-content" style="z-index: 12; font-size: 151%; border-style: solid; border-width: 6px;" data-highlight-theme="xcode"><pre><code>def whateverYouWant(person1, person2):
+   print("Whatever " + person1 + " and " + person2 + " want.")
+
+whateverYouWant("Shelly", "Moses")</code></pre></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 151px; top: 350px;" data-block-id="86b35f27b59e8c3a8fd800bfba4a6b7c"><div class="sl-block-content" data-line-x1="1229" data-line-y1="200" data-line-x2="464" data-line-y2="200" data-line-color="#ffff00" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="3px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="765" height="1" viewbox="464 200 765 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="1229.5" y1="200.5" x2="464.5" y2="200.5"></line><line stroke="#ffff00" stroke-width="3" x1="1229.5" y1="200.5" x2="464.5" y2="200.5"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 255px; top: 410px;" data-block-id="8774390716fb9baa3b21c01976f0626b"><div class="sl-block-content" data-line-x1="705" data-line-y1="200" data-line-x2="464" data-line-y2="200" data-line-color="#ffff00" data-line-start-type="none" data-line-end-type="none" style="z-index: 16;" data-line-width="3px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="241" height="1" viewbox="464 200 241 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="705.5" y1="200.5" x2="464.5" y2="200.5"></line><line stroke="#ffff00" stroke-width="3" x1="705.5" y1="200.5" x2="464.5" y2="200.5"></line></svg></div></div></section><section data-id="a7b8d0a48b5ea9508a7717becf46262c" hidden aria-hidden="true" class="future">
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 839px; left: 88px; top: 78px;" data-block-id="d106f43e7456e34a5a38c92d06fde8e1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<p style="text-align:left"><span style="color:#008080"><span style="font-size:54px">Now let's use a shortcut to do the same thing - without all those plus signs!</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 223px; left: 0px; top: 0px;" data-block-id="ead800aac77c416a86f172d9c5439fc7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p style="text-align:left"><span style="color:#008080"><span style="font-size:120px"><strong>8</strong></span></span></p>
+</div></div>
+
+
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 163px; left: 0px; top: 350px;" data-block-id="4c262417cd7e77a517764a6012e16ed6"><div class="sl-block-content" style="z-index: 13; font-size: 166%; border-style: solid; border-width: 6px;" data-highlight-theme="xcode"><pre><code>def whateverYouWant(person1, person2):
+   print("Whatever %s and %s want." %(person1, person2))
+
+whateverYouWant("Shelly", "Moses")</code></pre></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 164px; top: 429px;" data-block-id="a11dd993639982275ce6742a9295c3ae"><div class="sl-block-content" data-line-x1="1210" data-line-y1="200" data-line-x2="464" data-line-y2="200" data-line-color="#ffff00" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="6px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="746" height="1" viewbox="464 200 746 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="1210" y1="200" x2="464" y2="200"></line><line stroke="#ffff00" stroke-width="6" x1="1210" y1="200" x2="464" y2="200"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 584px; top: 435px;" data-block-id="0301cda8fd10cbf8f5825e6277f1f63e"><div class="sl-block-content" data-line-x1="495" data-line-y1="132" data-line-x2="522" data-line-y2="-34" data-line-color="#000000" data-line-start-type="line-arrow" data-line-end-type="none" style="z-index: 15;" data-line-width="11px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="27" height="166" viewbox="495 -34 27 166"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="496.5" y1="124.5" x2="522.5" y2="-33.5"></line><line stroke="#000000" stroke-width="11" x1="496.5" y1="124.5" x2="522.5" y2="-33.5"></line><path style="fill: rgba(0,0,0,0);" stroke="#000000" stroke-width="11" transform="translate(496,124) rotate(9.238)" d="M -24.75 -24.75 L 0 0 L 24.75 -24.75"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="601b224e51118365f43b45753fd6c51c" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 599px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; font-size: 162%;">
+<p><span style="color:#008080">This is called a <strong>formatter</strong></span></p>
+</div></div></section><section data-id="443b3b0e815c94025dcb2e2be00831de" hidden aria-hidden="true" class="future">
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 839px; left: 88px; top: 78px;" data-block-id="880396c145313bb5c4146045d3a4a3e9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<p style="text-align:left"><span style="color:#008080"><span style="font-size:54px">What happens when you switch person1 and person2 in the <strong>formatter</strong>?</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 223px; left: 0px; top: 0px;" data-block-id="e553df51c948d80dab5456b509e64885"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p style="text-align:left"><span style="color:#008080"><span style="font-size:120px"><strong>9</strong></span></span></p>
+</div></div>
+
+
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 163px; left: 0px; top: 350px;" data-block-id="fce92bef17713f866a0562646e37eced"><div class="sl-block-content" style="z-index: 12; font-size: 166%; border-style: solid; border-width: 6px;" data-highlight-theme="xcode"><pre><code>def whateverYouWant(person1, person2):
+   print("Whatever %s and %s want." %(person2, person1))
+
+whateverYouWant("Shelly", "Moses")</code></pre></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 635px; top: 429px;" data-block-id="1693c48c3f581f972b17c65fbf0348bb"><div class="sl-block-content" data-line-x1="1202" data-line-y1="200" data-line-x2="940" data-line-y2="200" data-line-color="#ffff00" data-line-start-type="none" data-line-end-type="none" style="z-index: 13;" data-line-width="6px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="262" height="1" viewbox="940 200 262 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="1202" y1="200" x2="940" y2="200"></line><line stroke="#ffff00" stroke-width="6" x1="1202" y1="200" x2="940" y2="200"></line></svg></div></div></section><section data-id="023e862bed68acb72426a4ea5e4ace99" hidden aria-hidden="true" class="future">
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 767px; left: 160px; top: 78px;" data-block-id="50a610867ab779a4fdc40de9ccb70fd9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<p style="text-align:left"><span style="color:#008080"><span style="font-size:54px">Then, what happens if you switch person1 and person2 in the <strong>argument list</strong>?</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 223px; left: 0px; top: 0px;" data-block-id="e774dbe843db84824e12a849f65597f8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p style="text-align:left"><span style="color:#008080"><span style="font-size:120px"><strong>10</strong></span></span></p>
+</div></div>
+
+
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 163px; left: 0px; top: 350px;" data-block-id="a5bcbfd02a833e1602a0558dd7709971"><div class="sl-block-content" style="z-index: 12; font-size: 166%; border-style: solid; border-width: 6px;" data-highlight-theme="xcode"><pre><code>def whateverYouWant(person2, person1):
+   print("Whatever %s and %s want." %(person2, person1))
+
+whateverYouWant("Shelly", "Moses")</code></pre></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 340px; top: 394px;" data-block-id="6dae0c872465ebbead9bba8ade390a58"><div class="sl-block-content" data-line-x1="1201" data-line-y1="200" data-line-x2="940" data-line-y2="200" data-line-color="#ffff00" data-line-start-type="none" data-line-end-type="none" style="z-index: 13;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="261" height="1" viewbox="940 200 261 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="1201" y1="200" x2="940" y2="200"></line><line stroke="#ffff00" stroke-width="4" x1="1201" y1="200" x2="940" y2="200"></line></svg></div></div></section><section data-id="5ababaaf223a945d24f0b4c5ac3bb944" hidden aria-hidden="true" class="future">
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 802px; left: 125px; top: 172px;" data-block-id="2104b7d15e1acb0065bfea7bbc5b7efb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<p style="text-align:left"><span style="font-size:54px">Write a function that takes <strong>three</strong> words as arguments, and prints a sentence containing all three words.</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 601px; left: 0px; top: 0px;" data-block-id="0da02badab31e044422100e8f5755c48"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p style="text-align:left"><span style="color:#008080"><span style="font-size:120px"><strong>challenge:</strong></span></span></p>
+</div></div>
+
+
+</section>
+			</div>
+		</div>
+
+		<div class="embed-footer">
+			<a class="embed-footer-promotion" href="https://slides.com?ref=embed" target="_blank">Created with <strong>Slides</strong></a>
+			<div class="embed-footer-buttons">
+				<button class="embed-footer-button embed-footer-share icon i-share" data-tooltip="Share"></button>
+				<a class="embed-footer-button embed-footer-fullscreen icon i-fullscreen" data-tooltip="Fullscreen" href="http://slides.com/michellelim-2/python-strings/fullscreen" target="_top"></a>
+			</div>
+		</div>
+
+
+<script>
+	var SLConfig = {"current_user":{"id":813384,"username":"zadenrb","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/4704f927a9c45963673e3f12bab6ec4d?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":664796,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"editor_grid":true,"editor_snap":true,"developer_mode":true,"speaker_layout":null,"phone_number":null,"phone_country_code":null},"email":"zaden.ruggieroboune@gmail.com","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1,"storage_used":0,"storage_limit":262144000},"deck":{"id":1110917,"slug":"python-strings","title":"Python Strings","description":"","width":960,"height":700,"visibility":"all","published_at":"2017-11-07T00:53:46.383Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/998d5fd8664fc2458bc912516ce785dc/thumb.jpg?1515721007","view_count":139,"user":{"id":619939,"username":"michellelim-2","name":"Michelle Lim","description":null,"thumbnail_url":"https://lh4.googleusercontent.com/-4-90qGlqhJM/AAAAAAAAAAI/AAAAAAAAAJk/Ld8r1MgN_O8/photo.jpg?sz=50","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":466681,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"should_loop":false,"share_notes":false,"slide_number":true,"slide_count":19,"rtl":false,"version":2,"collaborative":true,"deck_user_editor_limit":1,"data_updated_at":1515721334149,"font_typekit":null,"font_google":null}};
+</script>
+		<script src="js/reveal.js"></script>
+		<script defer="defer" src="//assets.slid.es/assets/deck-01d6b9a0ffa9d1eb0d5b526f4df2f7ff.js"></script>
+
+<script>
+Reveal.initialize({
+  center: false,
+  postMessageEvents: true,
+  slideNumber: true
+});
+</script>
+	</body>
+</html>
