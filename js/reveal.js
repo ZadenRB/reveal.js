@@ -1796,6 +1796,8 @@
 
 		if( dom.wrapper && !isPrintingPDF() ) {
 
+			dom.wrapper.style.height = window.innerHeight - 34 + 'px';
+
 			var size = getComputedSlideSize();
 
 			// Layout the contents of the slides
