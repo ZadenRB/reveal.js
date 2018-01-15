@@ -4250,10 +4250,24 @@
 
 	function toggleHorizontalNavigation() {
 		config.horizontalNavigation = !config.horizontalNavigation;
+		if (config.horizontalNavigation) {
+			dom.controlsLeft.forEach( function( el ) { el.removeAttribute("disabled"); el.style.display = "block"; } );
+			dom.controlsRight.forEach( function( el ) { el.removeAttribute("disabled"); el.style.display = "block"; } );
+		} else {
+			dom.controlsLeft.forEach( function( el ) { el.setAttribute("disabled", "disabled"); el.style.display = "none"; } );
+			dom.controlsRight.forEach( function( el ) { el.setAttribute("disabled", "disabled"); el.style.display = "none"; } );
+		}
 	}
 
 	function toggleVerticalNavigation() {
 		config.verticalNavigation = !config.verticalNavigation;
+		if (config.verticalNavigation) {
+			dom.controlsUp.forEach( function ( el ) { el.removeAttribute("disabled"); el.style.display = "block"; } );
+			dom.controlsDown.forEach( function ( el ) { el.removeAttribute("disabled"); el.style.display = "block"; } );
+		} else {
+			dom.controlsUp.forEach( function ( el ) { el.setAttribute("disabled", "disabled"); el.style.display = "none"; } );
+			dom.controlsDown.forEach( function ( el ) { el.setAttribute("disabled", "disabled"); el.style.display = "none"; } );
+		}
 	}
 
 	function navigateLeft() {
